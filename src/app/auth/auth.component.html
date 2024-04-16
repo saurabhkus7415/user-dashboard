@@ -1,0 +1,52 @@
+<nz-layout>
+  <nz-layout>
+    <nz-layout class="inner-layout">
+      <nz-content class="page__container">
+        <div class="flex-item login__form">
+          <div class="login__form--title">Welcome back!</div>
+          <nz-form-item>
+            <nz-form-control>
+              <nz-input-group nzPrefixIcon="user">
+                <input
+                  type="text"
+                  nz-input
+                  placeholder="Username"
+                  [(ngModel)]="username"
+                />
+              </nz-input-group>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
+            <nz-form-control>
+              <nz-input-group nzPrefixIcon="lock">
+                <input
+                  type="password"
+                  nz-input
+                  placeholder="Password"
+                  [(ngModel)]="password"
+                />
+              </nz-input-group>
+            </nz-form-control>
+          </nz-form-item>
+          <div nz-row class="login-form-margin">
+            <div nz-col [nzSpan]="12">
+              <!-- Add remember me checkbox if needed -->
+            </div>
+            <!-- Add forgot password link if needed -->
+          </div>
+          <button
+            nz-button
+            nzType="primary"
+            class="w-100 login-form-margin"
+            (click)="onSubmit()"
+          >
+            LOGIN
+          </button>
+          <div class="login__form--footer">
+            Don't have an account? <a href="/register">Register Now</a>
+          </div>
+        </div>
+      </nz-content>
+    </nz-layout>
+  </nz-layout>
+</nz-layout>

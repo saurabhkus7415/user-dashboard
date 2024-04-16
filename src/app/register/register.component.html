@@ -1,0 +1,23 @@
+<nz-layout>
+    <nz-layout>
+      <nz-layout class="inner-layout">
+        <nz-content class="page__container">
+          <div class="flex-item register__form">
+            <div class="register__form--title">Register</div>
+            <input type="text" nz-input placeholder="Name" #nameInput />
+            <input type="text" nz-input placeholder="Mobile" #mobileInput />
+            <input type="email" nz-input placeholder="Email" #emailInput />
+            <input type="number" nz-input placeholder="Age" #ageInput />
+            <nz-select nzPlaceholder="Gender" #genderSelect>
+              <nz-option nzLabel="Male" nzValue="male"></nz-option>
+              <nz-option nzLabel="Female" nzValue="female"></nz-option>
+              <nz-option nzLabel="Other" nzValue="other"></nz-option>
+            </nz-select>
+            <button nz-button nzType="primary" class="w-100 register-form-margin" (click)="register()">REGISTER</button>
+            <div class="register__form--footer">Already have an account? <a routerLink="/login">Login</a></div>
+          </div>
+        </nz-content>
+      </nz-layout>
+    </nz-layout>
+  </nz-layout>
+  

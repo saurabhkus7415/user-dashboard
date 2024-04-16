@@ -1,0 +1,27 @@
+.page {
+    &__container {
+      width: calc(100vw - 64px);
+      max-width: 1600px;
+      margin: auto;
+      min-height: calc(100vh - 417px);
+      display: flex;
+    }
+  }
+  
+  .login {
+    &__form {
+      max-width: 400px;
+      margin: auto;
+      min-width: 300px;
+      &--title {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 12px;
+      }
+      &--footer {
+        text-align: center;
+        margin-top: 24px;
+      }
+    }
+  }
